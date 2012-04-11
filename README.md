@@ -8,24 +8,27 @@ Setup
 
 To use this, you'll want to:
 
-0. create a ~/.keysets directory.
-1. Within that directory will need to be one directory for each of your keysets.
-2. Within each keyset directory, you'll want to have copies of the relevant dotfiles to be rotated in and out, with the leading dots removed:
+1. Create a `~/.keysets` directory.
+2. Within that directory will need to be one directory for each of your keysets.
+3. Within each keyset directory, you'll want to have copies of the relevant dotfiles to be rotated in and out, with the leading dots removed.
+4. Finally, you'll want to symlink 'current' in the .keysets directory to whichever keyset is currently loaded.
 
-<pre>~/.keysets/dann
-~/.keysets/dann/ssh
-~/.keysets/dann/ssh/config
-~/.keysets/dann/ssh/known_hosts
-~/.keysets/dann/ssh/id_dsa
-~/.keysets/dann/ssh/id_dsa.pub
-~/.keysets/dann/gitconfig
-~/.keysets/dann/eyrc
-~/.keysets/another_account/eyrc
-~/.keysets/another_account/ssh/config</pre>
+A sample keysets directory might look like this:
 
-3. Finally, you'll want to symlink 'current' in the .keysets directory to whichever keyset is currently loaded.
-4. Needless to say, CREATE BACKUPS OF YOUR KEYS BEFORE RUNNING THIS SCRIPT.
-5. Ahem. Thank you.
+<pre>.keysets/dann
+.keysets/dann/ssh
+.keysets/dann/ssh/config
+.keysets/dann/ssh/known_hosts
+.keysets/dann/ssh/id_dsa
+.keysets/dann/ssh/id_dsa.pub
+.keysets/dann/gitconfig
+.keysets/dann/eyrc
+...
+.keysets/another_account/eyrc
+.keysets/another_account/ssh/config
+...</pre>
+
+Needless to say, CREATE BACKUPS OF YOUR KEYS BEFORE RUNNING THIS SCRIPT.  Ahem. Thank you.
 
 Runtime
 -------
