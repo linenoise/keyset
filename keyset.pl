@@ -3,7 +3,7 @@ use strict;
 
 ###
 # keyset script - a utility for managing multiple keysets within the same UNIX account
-# Copyright (C) 2012 Dann Stayskal
+# Copyright (C) 2012 Danne Stayskal
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
